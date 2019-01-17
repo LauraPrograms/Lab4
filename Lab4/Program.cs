@@ -24,33 +24,20 @@ namespace Lab4
                 for (int i=1; i<=x; i++)
                 {
                     z = SquaredInteger(i);
-                    y = CubedInteger(i);
-                    
-                    Console.WriteLine(i + "\t\t" + z + "\t\t" + y);
-                    
-                }
-                for (int i = 1; i <= x; i++)
-                {
-                    
-                }
+                    y = CubedInteger(i);                    
+                    Console.WriteLine(i + "\t\t" + z + "\t\t" + y);                    
+                }                
                 Console.WriteLine("Would you like to run another set of integers? (y/n)");
-                string decision = Console.ReadLine().ToLower();
-
-                bool goOn;
+                string decision = Console.ReadLine().ToLower();                
               if (decision == "y")       
               {
-                    goOn = true;
+                    run = true;
               }
               else if (decision == "n")
                 {
-                    goOn = false;
-                    break;
+                    run = false;
                 }
-              else
-                {
-                    Console.WriteLine("I don't understand, please try again.");
-                    
-                }
+            
             }
                     
         }
